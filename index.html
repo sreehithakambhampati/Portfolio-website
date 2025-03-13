@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3afd194092.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <h3><span class="name">S</span>reehitha</h3>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                Hi,My name is <span class="purple">Sreehitha</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+            </div>
+            <div class="background">
+                <img src="images/images/bg.png" alt="" srcset="">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- -------------------about------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a tech enthusiast skilled in creating dynamic data dashboards with Power BI, building responsive websites using HTML, CSS, and JavaScript.Proficient in Java, R, and MySQL, I’m passionate about solving challenges through innovative technology and continuously expanding my expertise to deliver impactful results in the tech industry.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java</li>
+                            <li><span>Data Analysis & Visualization</span><br>MySQL,Power BI</li>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript,React JS </li>
+                           
+                         
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>VIT AP University</span><br>Bachelor's Degree (2022-2026)<br>CGPA : 9.70</li>
+                            <li><span>Sri Chaitanya Junior College</span><br>Intermediate Education (2020-2022)</li>
+                            <li><span>Sri Vidya High School</span><br>High School Education</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Coding Proficiency</span><br>Successfully solved over 200 problems on LeetCode and
+                                100+ problems on GeeksforGeeks.</li>
+                                <div class="code">
+                                    <a href="https://leetcode.com/u/krvsksks/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" fill="none">
+                                            <path d="M13.8514 3L4.62921 12C3.79026 12.8187 3.79026 14.1462 4.62921 14.9649L10.1841 20.386C11.0231 21.2047 12.3833 21.2047 13.2222 20.386L15.9997 17.6754" />
+                                            <path d="M6.33203 10.3377L10.1836 6.57889C11.0226 5.76016 12.3828 5.76016 13.2217 6.57889L15.9992 9.28943" />
+                                            <path d="M11 13H20" stroke-width="2.5"/>
+                                        </svg>
+                                    </a>
+                                
+                                    <a href="https://www.geeksforgeeks.org/user/meeeee5/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 48 48" fill="none">
+                                            <path d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                               
+
+                                  
+                            <li><span>Academic Excellence</span><br>Recognized with two academic awards for consistently
+                                maintaining a high CGPA.</li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------------------------- -- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/images/power.jpg" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Credit Card Analysis Dashboard</h3>
+                        <p>An interactive credit card financial dashboard in Power BI that analyzes transaction and customer data, offering real-time insights into key performance metrics and trends. Designed to support data-driven decision-making through streamlined data processing and visualization.
+                        </p>
+                        <a href="https://github.com/sreehithakambhampati/Credit_Card_Analysis_Dashboard"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images/portfolio.jpg" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>A personal portfolio website built with HTML, CSS, and JavaScript, showcasing my skills, projects, and achievements. It features interactive sections for easy navigation and highlights my experience in web development. The site is designed to provide a comprehensive view of my capabilities and work.
+                        </p>
+                        <a href="https://github.com/sreehithakambhampati/netflix_clone"<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images/excel.jpg" alt="" srcset="">
+                    <div class="layer">
+                        <h3>BlogSphere</h3>
+                        <p>A sleek and responsive blogging platform built with React.js, HTML, CSS, and JavaScript, powered by Appwrite for the backend. It offers seamless post creation, editing, authentication, and real-time updates, making content management effortless for bloggers.</p>
+                        <a href="https://github.com/sreehithakambhampati/BlogSphere"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------contact---------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                   
+                    <p><i class="fas fa-paper-plane"></i> <a class="mail" href="mailto:kambhampatisreehitha@gmail.com">kambhampatisreehitha@gmail.com</a></p>
+
+                    <p><i class="fas fa-phone-square"></i> 7993665261</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sreehitha-kambhampati-62213b294/"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a> -->
+                    </div>
+                    <a href="images/images/my-cv.pdf" download class="btn btn2 download">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front End developer', 'Coding Enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwN1nh-9DllNuzcW5SgRin0xGXRYUEa6xs-my3yW09_ASXEjMcpBh575agDkqQ2KYWb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+        var sidemeu = document.getElementById("sidemenu");
+function openmenu(){
+sidemeu.style.right = "0";
+}
+function closemenu(){
+sidemeu.style.right = "-200px";
+}
+    </script>
+
+
+</body>
+
+</html>
